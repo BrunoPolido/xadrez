@@ -1,0 +1,171 @@
+package utills;
+
+public class pecasXadrez {
+	public String pecaescolhi;
+	public String jogada;
+	public String jogadava;
+
+	public void peao() {
+
+		System.out.println(
+				"A peca Peao começa na segunda fileira sendo a2 ate h2 pode se mover uma casa por vez em fileiras retas somente para frente");
+		System.out.println("No Exemplo do tabuleiro a baixo ela esta sendo indentificada pela Letra P2");
+		System.out.println("====== TABULEIRO XADREZ ======");
+		System.out.println("    A  B  C  D  E  F  G  H");
+		System.out.println("  --------------------------");
+		System.out.println("8 | A8 B8 C8 D8 E8 F8 G8 H8| 8");
+		System.out.println("7 | A7 B7 C7 D7 E7 F7 G7 H7| 7");
+		System.out.println("6 | A6 B6 C6 D6 E6 F6 G6 H6| 6");
+		System.out.println("5 | A5 B5 C5 D5 E5 F5 G5 H5| 5");
+		System.out.println("4 | A5  B5  C5  D5  E5  F5  G5  H4 | 4");
+		System.out.println("3 | -  -  -  -  -  -  -  - | 3");
+		System.out.println("2 | P2 P2 P2 P2 P2 P2 P2 P2| 2");
+		System.out.println("1 | A1 B1 C1 D1 E1 F1 G1 H1| 1");
+		System.out.println("  --------------------------");
+		System.out.println("    A  B  C  D  E  F  G  H");
+		System.out.println("====== TABULEIRO XADREZ ======");
+
+	}
+
+	public void jogadapeao() {
+		switch (jogada) {
+		case "a4":
+			jogadava = "jogada Valida";
+			break;
+		case "b4":
+			jogadava = "jogada Valida";
+			break;
+		case "c4":
+			jogadava = "jogada Valida";
+			break;
+		case "d4":
+			jogadava = "jogada Valida";
+			break;
+		case "e4":
+			jogadava = "jogada Valida";
+			break;
+		case "f4":
+			jogadava = "jogada Valida";
+			break;
+		case "g4":
+			jogadava = "jogada Valida";
+			break;
+		case "h4":
+			jogadava = "jogada Valida";
+			break;
+		default:
+			jogadava = "Jogada invalida para essa peca";
+			break;
+		}
+	}
+
+	public void torre() {
+
+		System.out.println(
+				"A peca Torre começa na primeira fileira sendo a1 e h1 pode se mover quantas casas quiser em linhas retas para qualquer direcao");
+		System.out.println("No Exemplo do tabuleiro a baixo ela esta sendo indentificada pela Letra T1");
+		System.out.println("====== TABULEIRO XADREZ ======");
+		System.out.println("    A  B  C  D  E  F  G  H");
+		System.out.println("  --------------------------");
+		System.out.println("8 | A8 B8 C8 D8 E8 F8 G8 H8| 8");
+		System.out.println("7 | A7 B7 C7 D7 E7 F7 G7 H7| 7");
+		System.out.println("6 | -  B6 C6 D6 E6 F6 G6 - | 6");
+		System.out.println("5 | -  B5 C5 D5 E5 F5 G5 - | 5");
+		System.out.println("4 | -  B4 C4 D4 E4 F4 G4 - | 4");
+		System.out.println("3 | -  B3 C3 D3 E3 F3 G3 - | 3");
+		System.out.println("2 | -  B2 C3 D2 E2 F2 G2 - | 2");
+		System.out.println("1 | T1 -  -  -  -  -  -  T1| 1");
+		System.out.println("  --------------------------");
+		System.out.println("    A  B  C  D  E  F  G  H");
+		System.out.println("====== TABULEIRO XADREZ ======");
+
+	}
+
+	public void cavalo() {
+
+		System.out.println(
+				"A peca Cavalo começa na primeira fileira sendo B1 e G1 pode se mover 3 casas para frente e uma para o lado Igual a Letra L ");
+		System.out.println("No Exemplo do tabuleiro a baixo ela esta sendo indentificada pela Letra C1");
+		System.out.println("====== TABULEIRO XADREZ ======");
+		System.out.println("    A  B  C  D  E  F  G  H");
+		System.out.println("  --------------------------");
+		System.out.println("8 | A8 B8 C8 D8 E8 F8 G8 H8| 8");
+		System.out.println("7 | A7 B7 C7 D7 E7 F7 G7 H7| 7");
+		System.out.println("6 | A6 B6 C6 D6 E6 F6 G6 H6| 6");
+		System.out.println("5 | A5 B5 C5 D5 E5 F5 G5 H5| 5");
+		System.out.println("4 | A4 B4 C4 D4 E4 F4 G4 H4| 4");
+		System.out.println("3 | -  -  -  D3 E3 -  -  - | 3");
+		System.out.println("2 | A2 -  C3 D2 E2 F2 -  H2| 2");
+		System.out.println("1 | A1 C1 C1 D1 E1 F1 C1 H1| 1");
+		System.out.println("  --------------------------");
+		System.out.println("    A  B  C  D  E  F  G  H");
+		System.out.println("====== TABULEIRO XADREZ ======");
+
+	}
+
+	public void bispo() {
+
+		System.out.println(
+				"A peca Bispo começa na primeira fileira sendo C1 e F1 pode se mover quantas casas qusier des que seja na diagonal  /  ");
+		System.out.println("No Exemplo do tabuleiro a baixo ela esta sendo indentificada pela Letra Bi1");
+		System.out.println("====== TABULEIRO XADREZ ======");
+		System.out.println("    A  B  C   D  E  F   G  H");
+		System.out.println("  --------------------------");
+		System.out.println("8 | A8 B8 C8  D8 E8 F8  G8 H8| 8");
+		System.out.println("7 | A7 B7 C7  D7 E7 F7  G7 H7| 7");
+		System.out.println("6 | A6 B6 C6  D6 E6 F6  G6 - | 6");
+		System.out.println("5 | A5 B5 C5  D5 E5 F5  -  H5| 5");
+		System.out.println("4 | A4 B4 C4  D4 E4 -   G4 H4| 4");
+		System.out.println("3 | -  B3 C3  D3 -  F3  G3 H3| 3");
+		System.out.println("2 | A2 -  C3  -  E2 F2  G2 H2| 2");
+		System.out.println("1 | A1 B1 Bi1 D1 E1 Bi1 G1 H1| 1");
+		System.out.println("  --------------------------");
+		System.out.println("    A  B  C   D  E  F   G  H");
+		System.out.println("====== TABULEIRO XADREZ ======");
+
+	}
+
+	public void rainha() {
+
+		System.out.println(
+				"A peca Rainha começa na primeira fileira sendo d1 pode se mover quantas casas qusier para qualqeur direçao exeto em L igual ao Cavalo");
+		System.out.println("No Exemplo do tabuleiro a baixo ela esta sendo indentificada pela Letra Ra1");
+		System.out.println("====== TABULEIRO XADREZ ======");
+		System.out.println("    A  B  C   D   E  F  G  H");
+		System.out.println("  --------------------------");
+		System.out.println("8 | A8 B8 C8  D8  E8 F8 G8 H8| 8");
+		System.out.println("7 | A7 B7 C7  D7  E7 F7 G7 H7| 7");
+		System.out.println("6 | A6 B6 C6  -   E6 F6 G6 H6| 6");
+		System.out.println("5 | A5 B5 C5  -   E5 F5 G5 - | 5");
+		System.out.println("4 | -  B4 C4  -   E4 F4 -  H4| 4");
+		System.out.println("3 | A3 -  C3  -   E3 -  G3 H3| 3");
+		System.out.println("2 | A2 B2 -   -   -  F2 G2 H2| 2");
+		System.out.println("1 | -  -  -  Ra1  -  -  -  - | 1");
+		System.out.println("  --------------------------");
+		System.out.println("    A  B  C   D   E  F  G  H");
+		System.out.println("====== TABULEIRO XADREZ ======");
+
+	}
+
+	public void rei() {
+
+		System.out.println(
+				"A peca rei começa na primeira fileira sendo e1 pode se mover uma casa por vez para qualqeur direçao exeto em L igual ao Cavalo");
+		System.out.println("No Exemplo do tabuleiro a baixo ela esta sendo indentificada pela Letra Re1");
+		System.out.println("====== TABULEIRO XADREZ ======");
+		System.out.println("    A  B  C   D   E   F  G  H");
+		System.out.println("  --------------------------");
+		System.out.println("8 | A8 B8 C8  D8  E8  F8 G8 H8| 8");
+		System.out.println("7 | A7 B7 C7  D7  E7  F7 G7 H7| 7");
+		System.out.println("6 | A6 B6 C6  D6  E6  F6 G6 H6| 6");
+		System.out.println("5 | A5 B5 C5  D5  E5  F5 G5 H5| 5");
+		System.out.println("4 | A4 B4 C4  D4  E4  F4 G4 H4| 4");
+		System.out.println("3 | A3 B3 C3  D3  E3  F3 G3 H3| 3");
+		System.out.println("2 | A2 B2 C3  -   -   -  G2 H2| 2");
+		System.out.println("1 | A1 B1 C1  -  Re1  -  G1 H1| 1");
+		System.out.println("  --------------------------");
+		System.out.println("    A  B  C   D   E   F  G  H");
+		System.out.println("====== TABULEIRO XADREZ ======");
+
+	}
+}

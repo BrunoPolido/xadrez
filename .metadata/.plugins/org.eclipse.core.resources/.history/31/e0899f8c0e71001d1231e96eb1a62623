@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class entradaDeDados1 {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String peca;
+		
+		int ncasa;
+		
+		String lcasa;
+		
+		System.out.println("Digite o nome da Peca que deseja Jogar");
+		peca = sc.next();
+		
+		System.out.printf("Voce Escolheu a Peça = %s %n", peca);
+		
+		System.out.println("Escolha o numero da Casa");
+		lcasa = sc.next();
+		
+		System.out.printf("Voce Escolheu A letra da casa = %s", lcasa);
+		
+		
+		
+		
+		
+		sc.close();
+		
+	}
+
+}

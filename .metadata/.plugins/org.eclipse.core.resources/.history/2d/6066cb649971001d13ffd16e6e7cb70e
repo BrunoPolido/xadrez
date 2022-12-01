@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ifelse {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int horas;
+		
+		horas = sc.nextInt();
+		
+		
+		if(horas < 12) {
+			System.out.println("Bom Dia");
+		}else {
+			System.out.println("Boa Tarde");
+		}
+		
+		sc.close();
+		
+	}
+
+}

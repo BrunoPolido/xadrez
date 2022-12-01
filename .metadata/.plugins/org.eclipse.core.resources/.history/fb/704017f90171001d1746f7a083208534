@@ -1,0 +1,14 @@
+package saidaDeDados;
+
+import java.util.Locale;
+
+public class program {
+	public static void main(String[] args) {
+		
+		double x = 10.10;
+		String nome = "Maria";
+		int idade = 31;
+		
+		System.out.printf("%s tem %d" , nome, idade);
+	}
+}

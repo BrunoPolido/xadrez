@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class entradaDeDados1 {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String peca;
+		
+		System.out.println("Digite o nome da Peca que deseja Jogar");
+		peca = sc.next();
+		
+		System.out.printf("Voce Escolheu a Peça", peca);
+		
+
+		
+		
+		
+		
+		sc.close();
+		
+	}
+
+}
