@@ -32,7 +32,34 @@ public class jogoXadrez {
 
 		System.out.println("Digite a jogada que deseja exemplo a4");
 		pecaxa.jogada = sc.next();
+		
+		switch (pecaxa.pecaescolhi) {
+		case "peao":
+			pecaxa.jogadapeao();
+			break;
+		case "torre":
+			pecaxa.jogadatorre();
+			break;
+		case "cavalo":
+			pecaxa.jogadacavalo();
+			break;
+		case "bispo":
+			pecaxa.jogadabispo();
+			break;
+		case "rainha":
+			pecaxa.jogadarainha();
+			break;
+		case "rei":
+			pecaxa.jogadarei();
+			break;
+		default:
+			System.out.println("Peça Invalida");
+		}
+		System.out.printf(pecaxa.jogadava);
 
+		sc.close();
+		
+		/*
 		if(pecaxa.pecaescolhi == "peao") {
 			pecaxa.jogadapeao();
 		}else if(pecaxa.pecaescolhi == "torre") {
@@ -46,13 +73,7 @@ public class jogoXadrez {
 		}else if(pecaxa.pecaescolhi == "rei") {
 			pecaxa.jogadarei();
 		}
-
-		System.out.printf(pecaxa.jogadava);
-
-		sc.close();
-
 		
-		/*
 		 * if(pecaxa.pecaescolhi == 'p') { pecaxa.peao(); }else if(pecaxa.pecaescolhi ==
 		 * 't') { pecaxa.torre(); }else if(pecaxa.pecaescolhi == 'c') { pecaxa.cavalo();
 		 * }else if(pecaxa.pecaescolhi == 'b') { pecaxa.bispo(); }else
