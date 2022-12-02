@@ -33,12 +33,19 @@ public class jogoXadrez {
 		System.out.println("Digite a jogada que deseja exemplo a4");
 		pecaxa.jogada = sc.next();
 
-		pecaxa.jogadapeao();
-		pecaxa.jogadatorre();
-		pecaxa.jogadacavalo();
-		pecaxa.jogadabispo();
-		pecaxa.jogadarainha();
-		pecaxa.jogadarei();
+		if(pecaxa.pecaescolhi == "peao") {
+			pecaxa.jogadapeao();
+		}else if(pecaxa.pecaescolhi == "torre") {
+			pecaxa.jogadatorre();
+		}else if(pecaxa.pecaescolhi == "cavalo") {
+			pecaxa.jogadacavalo();
+		}else if(pecaxa.pecaescolhi == "bispo") {
+			pecaxa.jogadabispo();
+		}else if(pecaxa.pecaescolhi == "rainha") {
+			pecaxa.jogadarainha();
+		}else if(pecaxa.pecaescolhi == "rei") {
+			pecaxa.jogadarei();
+		}
 
 		System.out.printf(pecaxa.jogadava);
 
